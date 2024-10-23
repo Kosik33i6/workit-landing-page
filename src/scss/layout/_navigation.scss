@@ -1,0 +1,11 @@
+.navigation {
+  height: 67px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  @include breakpoint(tablet) {
+    padding: 0 44px;
+  }
+}

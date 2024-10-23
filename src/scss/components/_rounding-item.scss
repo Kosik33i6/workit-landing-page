@@ -1,0 +1,32 @@
+.rounding-item {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: transparent;
+  z-index: 1;
+
+  &__svg {
+    width: 100%;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+  }
+
+  &__path {
+    fill: $color-primary-light;
+  }
+
+  &--mobile {
+    @include breakpoint(desktop) {
+      display: none;
+    }
+  }
+
+  &--desktop {
+    display: none;
+    @include breakpoint(desktop) {
+      display: block;
+    }
+  }
+}

@@ -6,19 +6,250 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: 62.5%;
-}
-
 @font-face {
   font-family: "Fraunces";
-  src: url("../assets/fonts/fraunces/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf") format("truetype");
+  src: url("../assets/fonts/fraunces/fraunces-semi-bold.ttf") format("truetype");
   font-style: normal;
 }
 @font-face {
   font-family: "Manrope";
   src: url("../assets/fonts/manrope/Manrope-VariableFont_wght.ttf") format("truetype");
   font-style: normal;
+}
+.heading-primary {
+  padding: 0 20px;
+  margin: 56px 0 40px;
+  font-family: "Fraunces", sans-serif;
+  font-size: 48px;
+  font-weight: normal;
+  line-height: 48px;
+  text-align: center;
+  color: #fff;
+}
+.heading-primary__underline {
+  position: relative;
+}
+.heading-primary__underline::before {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #44FFA1;
+}
+@media only screen and (min-width: 768px) {
+  .heading-primary {
+    max-width: 500px;
+    margin: 56px auto 40px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .heading-primary {
+    max-width: 600px;
+    font-size: 80px;
+    line-height: 80px;
+  }
+}
+
+.container--centered {
+  display: flex;
+  justify-content: center;
+}
+.container--hidden {
+  overflow: hidden;
+}
+
+.bg-pattern {
+  display: none;
+  position: absolute;
+  overflow: hidden;
+}
+@media only screen and (min-width: 768px) {
+  .bg-pattern {
+    display: block;
+  }
+}
+.bg-pattern--left {
+  top: 58px;
+  left: 0;
+}
+.bg-pattern--right {
+  bottom: 97.5px;
+  right: 0;
+}
+@media only screen and (min-width: 1440px) {
+  .bg-pattern--right {
+    bottom: 240.5px;
+  }
+}
+.bg-pattern img {
+  object-fit: contain;
+}
+.bg-pattern--left img {
+  object-position: -215px 50%;
+}
+@media only screen and (min-width: 1440px) {
+  .bg-pattern--left img {
+    object-position: -100px 50%;
+  }
+}
+.bg-pattern--right img {
+  object-position: 100px 50%;
+}
+@media only screen and (min-width: 1440px) {
+  .bg-pattern--right img {
+    object-position: 40px 50%;
+  }
+}
+
+.button, .button:link, .button:visited {
+  text-decoration: none;
+  font-family: "Manrope", sans-serif;
+  transition: all 0.4s;
+}
+.button--primary {
+  padding: 12px 32px;
+  border: 2px solid transparent;
+  background-color: #44FFA1;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28.8px;
+  text-align: center;
+  color: #24053E;
+}
+.button--primary:hover {
+  background-color: #24053E;
+  border-color: #44FFA1;
+  color: #44FFA1;
+}
+.button--secondary {
+  position: relative;
+  margin-bottom: 3px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32.4px;
+  text-align: left;
+  color: #fff;
+}
+.button--secondary::before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #44FFA1;
+}
+.button--secondary:hover {
+  color: #44FFA1;
+}
+
+.image-hero {
+  width: 318px;
+  height: 185px;
+  position: absolute;
+  left: 50%;
+  bottom: -74px;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+@media only screen and (min-width: 768px) {
+  .image-hero {
+    width: 512px;
+    height: 296px;
+    bottom: -127px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .image-hero {
+    width: 762px;
+    height: 444px;
+    bottom: -147px;
+  }
+}
+.image-hero img {
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.logo {
+  width: 95.76px;
+  height: 24.61px;
+  margin-bottom: 5.2px;
+}
+.logo__img {
+  width: 100%;
+  height: 100%;
+}
+
+.rounding-item {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: transparent;
+  z-index: 1;
+}
+.rounding-item__svg {
+  width: 100%;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+}
+.rounding-item__path {
+  fill: #FCF8FF;
+}
+@media only screen and (min-width: 1440px) {
+  .rounding-item--mobile {
+    display: none;
+  }
+}
+.rounding-item--desktop {
+  display: none;
+}
+@media only screen and (min-width: 1440px) {
+  .rounding-item--desktop {
+    display: block;
+  }
+}
+
+.hero {
+  position: relative;
+  height: 481px;
+  background-color: #24053E;
+  z-index: 3;
+}
+@media only screen and (min-width: 768px) {
+  .hero {
+    height: 540px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .hero {
+    height: 771px;
+  }
+}
+
+.navigation {
+  height: 67px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+@media only screen and (min-width: 768px) {
+  .navigation {
+    padding: 0 44px;
+  }
+}
+
+.section-info {
+  height: 100vh;
+  background-color: #FCF8FF;
 }
 
 /*# sourceMappingURL=style.css.map */
