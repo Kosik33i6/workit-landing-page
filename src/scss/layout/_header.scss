@@ -1,0 +1,12 @@
+.hero {
+  position: relative;
+  height: 481px;
+  background-color: $color-primary-dark;
+  z-index: 3;
+  @include breakpoint(tablet) {
+    height: 540px;
+  }
+  @include breakpoint(desktop) {
+    height: 771px;
+  }
+}

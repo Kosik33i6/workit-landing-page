@@ -1,0 +1,41 @@
+.bg-pattern {
+  display: none;
+  position: absolute;
+  overflow: hidden;
+
+  @include breakpoint(tablet) {
+    display: block;
+  }
+
+  &--left {
+    top: 58px;
+    left: 0;
+  }
+
+  &--right {
+    bottom: 97.5px;
+    right: 0;
+    @include breakpoint(desktop) {
+      bottom: 240.5px;
+    }
+  }
+
+  img {
+    object-fit: contain;
+  }
+
+  &--left img {
+    object-position: -215px 50%;
+    @include breakpoint(desktop) {
+      object-position: -100px 50%;
+    }
+
+  }
+
+  &--right img {
+    object-position: 100px 50%;
+    @include breakpoint(desktop) {
+      object-position: 40px 50%;
+    }
+  }
+}
