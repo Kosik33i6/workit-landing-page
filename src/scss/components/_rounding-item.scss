@@ -13,10 +13,6 @@
     left: 0;
   }
 
-  &__path {
-    fill: $color-primary-light;
-  }
-
   &--mobile {
     @include breakpoint(desktop) {
       display: none;
@@ -28,5 +24,13 @@
     @include breakpoint(desktop) {
       display: block;
     }
+  }
+
+  &--primary &__path {
+    fill: $color-primary-light;
+  }
+
+  &--secondary &__path {
+    fill: #fff;
   }
 }
