@@ -1,6 +1,6 @@
 .image-hero {
-  width: 318px;
-  height: 185px;
+  width: 320px;
+  height: 184px;
   position: absolute;
   left: 50%;
   bottom: -74px;
@@ -8,14 +8,14 @@
   z-index: 2;
 
   @include breakpoint(tablet) {
-    width: 512px;
+    width: 515px;
     height: 296px;
     bottom: -127px;
   }
 
   @include breakpoint(desktop) {
-    width: 762px;
-    height: 444px;
+    width: 767px;
+    height: 441px;
     bottom: -147px;
   }
 

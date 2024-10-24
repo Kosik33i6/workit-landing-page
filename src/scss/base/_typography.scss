@@ -47,3 +47,21 @@
     line-height: 80px;
   }
 }
+
+.heading-secondary {
+  font-family: $primary-font;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28.8px;
+  color: $color-primary-dark;
+
+  @include breakpoint(tablet) {
+    font-size: 28px;
+    line-height: 33.6px;
+  }
+
+  @include breakpoint(desktop) {
+    font-size: 32px;
+    line-height: 38.4px;
+  }
+}
