@@ -123,6 +123,10 @@
   overflow: hidden;
 }
 
+.mb--medium {
+  margin-bottom: 56px;
+}
+
 .about {
   padding: 0 20px;
 }
@@ -462,6 +466,30 @@
   fill: #fff;
 }
 
+.social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-icon:not(:last-child) {
+  margin-right: 28px;
+}
+.social-icon__path {
+  transition: all 0.4s ease;
+}
+.social-icon:hover .social-icon__path {
+  fill: #24053E;
+}
+
+.footer {
+  padding: 80px 0;
+}
+@media only screen and (min-width: 1440px) {
+  .footer {
+    padding: 112px 0;
+  }
+}
+
 .hero {
   position: relative;
   height: 481px;
@@ -494,7 +522,6 @@
 
 .section-about {
   padding: 64px 0 0;
-  margin-bottom: 100px;
 }
 @media only screen and (min-width: 768px) {
   .section-about {
