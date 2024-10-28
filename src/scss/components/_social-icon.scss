@@ -1,0 +1,17 @@
+.social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-right: 28px;
+  }
+
+  &__path {
+    transition: all .4s ease;
+  }
+
+  &:hover &__path {
+    fill: $color-primary-dark
+  }
+}
