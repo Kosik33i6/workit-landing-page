@@ -65,3 +65,43 @@
     line-height: 38.4px;
   }
 }
+
+.heading-ternary {
+  font-family: $primary-font;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 38.4px;
+  text-align: center;
+  color: #fff;
+
+  @include breakpoint(tablet) {
+    font-size: 48px;
+    line-height: 58px;
+    text-align: left;
+  }
+
+  @include breakpoint(desktop) {
+    font-size: 56px;
+    line-height: 67px;
+  }
+}
+
+.description {
+  font-family: $secondary-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28.8px;
+
+  @include breakpoint(desktop) {
+    font-size: 18px;
+    line-height: 32.4px;
+  }
+
+  &--primary {
+    color: $color-primary-dark;
+  }
+
+  &--secondary {
+    color: #fff;
+  }
+}
