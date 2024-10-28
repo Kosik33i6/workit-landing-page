@@ -7,12 +7,12 @@
     display: block;
   }
 
-  &--left {
+  &--primary {
     top: 58px;
     left: 0;
   }
 
-  &--right {
+  &--secondary {
     bottom: 97.5px;
     right: 0;
     @include breakpoint(desktop) {
@@ -24,7 +24,7 @@
     object-fit: contain;
   }
 
-  &--left img {
+  &--primary img {
     object-position: -215px 50%;
     @include breakpoint(desktop) {
       object-position: -100px 50%;
@@ -32,10 +32,24 @@
 
   }
 
-  &--right img {
+  &--secondary img {
     object-position: 100px 50%;
     @include breakpoint(desktop) {
       object-position: 40px 50%;
+    }
+  }
+
+  &--ternary {
+    display: none;
+    @include breakpoint(tablet) {
+      display: block;
+      right: 14px;
+      bottom: -114px;
+    }
+
+    @include breakpoint(tablet) {
+      right: 108px;
+      bottom: -65px;
     }
   }
 }

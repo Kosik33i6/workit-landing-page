@@ -1,0 +1,81 @@
+.about {
+  padding: 0 20px;
+  @include breakpoint(tablet) {
+    padding: 0 44px;
+  }
+  @include breakpoint(desktop) {
+    max-width: 1120px;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  &__image {
+    margin: 0 auto;
+    width: 280px;
+    height: 280px;
+    overflow: hidden;
+
+    @include breakpoint(tablet) {
+      position: relative;
+      margin: 0 0 -112px;
+      z-index: -1;
+    }
+
+    @include breakpoint(desktop) {
+      width: 477px;
+      height: 477px;
+      margin: 0 0 -309px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center 48px;
+
+      @include breakpoint(tablet) {
+        object-position: center;
+      }
+    }
+  }
+
+  &__content {
+    //overflow: hidden;
+    padding: 32px;
+    background-color: $color-primary-dark;
+
+    @include breakpoint(tablet) {
+      position: relative;
+      padding: 48px;
+      margin-left: 176px;
+    }
+
+    @include breakpoint(desktop) {
+      max-width: 730px;
+      margin-left: 390px;
+      padding: 64px;
+    }
+  }
+
+  &__heading {
+    margin-bottom: 32px;
+  }
+
+  &__description {
+    margin-bottom: 32px;
+    text-align: center;
+
+    @include breakpoint(tablet) {
+      text-align: left;
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+
+    @include breakpoint(tablet) {
+      justify-content: initial;
+    }
+  }
+}

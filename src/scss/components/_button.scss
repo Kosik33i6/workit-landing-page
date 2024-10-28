@@ -2,20 +2,26 @@
   &,
   &:link,
   &:visited {
+    display: inline-block;
     text-decoration: none;
     font-family: $secondary-font;
     transition: all .4s;
   }
 
   &--primary {
-    padding: 12px 32px;
+    padding: 0 32px;
     border: 2px solid transparent;
     background-color: $color-secondary;
     font-size: 16px;
     font-weight: 700;
-    line-height: 28.8px;
+    line-height: 49px;
     text-align: center;
     color: $color-primary-dark;
+
+    @include breakpoint(tablet) {
+      font-size: 18px;
+      line-height: 52px;
+    }
 
     &:hover {
       background-color: $color-primary-dark;
