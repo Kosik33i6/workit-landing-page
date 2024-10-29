@@ -8,4 +8,9 @@
   @include breakpoint(tablet) {
     padding: 0 44px;
   }
+
+  @include breakpoint(desktop) {
+    height: 91px;
+    padding: 0 160px;
+  }
 }

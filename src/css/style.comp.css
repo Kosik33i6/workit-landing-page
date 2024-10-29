@@ -519,6 +519,12 @@
     padding: 0 44px;
   }
 }
+@media only screen and (min-width: 1440px) {
+  .navigation {
+    height: 91px;
+    padding: 0 160px;
+  }
+}
 
 .section-about {
   padding: 64px 0 0;
