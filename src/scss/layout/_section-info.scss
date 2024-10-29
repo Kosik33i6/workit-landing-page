@@ -1,0 +1,26 @@
+.section-info {
+  padding-top: 80px;
+  background-color: $color-primary-light;
+  position: relative;
+
+  @include breakpoint(tablet) {
+    padding-top: 136px;
+  }
+
+  &__list {
+    padding: 64px 20px 88px;
+    list-style: none;
+
+    @include breakpoint(tablet) {
+      padding: 56px 44px 116px;
+    }
+
+    @include breakpoint(desktop) {
+      display: flex;
+      column-gap: 32px;
+      max-width: 1120px;
+      padding: 88px 0 144px;
+      margin: 0 auto;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.image-hero {
+  width: 320px;
+  height: 184px;
+  position: absolute;
+  left: 50%;
+  bottom: -74px;
+  transform: translateX(-50%);
+  z-index: 2;
+
+  @include breakpoint(tablet) {
+    width: 515px;
+    height: 296px;
+    bottom: -127px;
+  }
+
+  @include breakpoint(desktop) {
+    width: 767px;
+    height: 441px;
+    bottom: -147px;
+  }
+
+  img {
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+}

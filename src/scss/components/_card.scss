@@ -1,0 +1,68 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  @include breakpoint(tablet) {
+    flex-direction: row;
+    column-gap: 56px;
+  }
+
+  @include breakpoint(desktop) {
+    flex-direction: column;
+  }
+
+  &__index {
+    display: inline-block;
+    flex-shrink: 0;
+    height: 48px;
+    width: 48px;
+    margin-bottom: 24px;
+    border: 1px solid $color-ternary;
+    border-radius: 50%;
+    font-family: $primary-font;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 48px;
+    text-align: center;
+    color: $color-primary-dark;
+
+    @include breakpoint(desktop) {
+      height: 56px;
+      width: 56px;
+      margin-bottom: 56px;
+      font-size: 24px;
+      line-height: 56px;
+    }
+  }
+
+  &__heading {
+    margin-bottom: 16px;
+    text-align: center;
+
+    @include breakpoint(tablet) {
+      text-align: left;
+    }
+
+    @include breakpoint(desktop) {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+  }
+
+  &__description {
+    text-align: center;
+    
+    @include breakpoint(tablet) {
+      text-align: left;
+    }
+
+    @include breakpoint(desktop) {
+      text-align: center;
+    }
+  }
+}

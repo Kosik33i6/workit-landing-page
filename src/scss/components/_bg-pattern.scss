@@ -1,0 +1,55 @@
+.bg-pattern {
+  display: none;
+  position: absolute;
+  overflow: hidden;
+
+  @include breakpoint(tablet) {
+    display: block;
+  }
+
+  &--primary {
+    top: 58px;
+    left: 0;
+  }
+
+  &--secondary {
+    bottom: 97.5px;
+    right: 0;
+    @include breakpoint(desktop) {
+      bottom: 240.5px;
+    }
+  }
+
+  img {
+    object-fit: contain;
+  }
+
+  &--primary img {
+    object-position: -215px 50%;
+    @include breakpoint(desktop) {
+      object-position: -100px 50%;
+    }
+
+  }
+
+  &--secondary img {
+    object-position: 100px 50%;
+    @include breakpoint(desktop) {
+      object-position: 40px 50%;
+    }
+  }
+
+  &--ternary {
+    display: none;
+    @include breakpoint(tablet) {
+      display: block;
+      right: 14px;
+      bottom: -114px;
+    }
+
+    @include breakpoint(tablet) {
+      right: 108px;
+      bottom: -65px;
+    }
+  }
+}

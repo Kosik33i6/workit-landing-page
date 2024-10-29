@@ -1,0 +1,7 @@
+.section-about {
+  padding: 64px 0 0;
+
+  @include breakpoint(tablet) {
+    padding: 112px 0 0;
+  }
+}
